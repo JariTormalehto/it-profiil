@@ -1,18 +1,22 @@
-# IT-profiil
+# IT-profiili mall
 
-Jari Törmälehto digitaalne profiil.
+Üldine muudetav profiilimall. Avalikku lähtekoodi ei lisata kasutajate andmeid.
 
-## Sisu muutmine
+## Kasutamine
 
-1. Ava leht ja vajuta **Muuda sisu**. Kõik profiili tekstid, sealhulgas pealkirjad, logo tähed ja footer, on muudetavad.
-2. Lisa vajadusel foto.
-3. Vajuta **Salvesta HTML** ja säilita allalaaditud fail. Veebis tehtud muudatused on ainult sinu brauseris kuni faili salvestamiseni.
-4. Avaliku lehe uuendamiseks asenda selle hoidla `index.html` salvestatud failiga ja laadi muudatus GitHubi.
+- Iga uus külastus ja lehe värskendamine avab malli.
+- **Muuda sisu** muudab kõiki profiili tekste, sealhulgas pealkirju ja footerit.
+- **Salvesta mustand** säilitab teksti ja foto ainult selle brauseri localStorage-is. Mustandit ei taastata automaatselt.
+- **Taasta mustand** avab selles brauseris salvestatud mustandi.
+- **Kustuta mustand** eemaldab salvestuse ja taastab lehel malli. Kasuta seda jagatud arvutis.
+- **Taasta mall** taastab algse malli, jättes salvestatud mustandi alles.
+- **Salvesta HTML** laadib alla isikliku koopia, mis sisaldab sisestatud andmeid. Ära asenda sellega avaliku malli lähtefaili.
+- **Prindi / PDF** salvestab praeguse vaate PDF-ina. Lülita brauseri päised ja jalused välja.
 
-## PDF
+## Privaatsus
 
-Vajuta **Prindi / PDF** ja vali brauseris PDF-ina salvestamine. Lülita brauseri printimisdialoogis päised ja jalused välja, et PDF-i ei lisataks veebiaadressi ega kuupäeva. Lehe enda footer on muudetav.
+Leht ei saada sisestatud andmeid ega fotosid serverisse ning ei kasuta analüütikat. Salvestus on brauseriprofiili, veebidomeeni ja selle lehe asukoha põhine; see ei ole kontopõhine ega krüpteeritud. Sama brauseriprofiili kasutaja saab salvestatud mustandi taastada. Brauseri saidiandmete kustutamine kustutab ka mustandi. Privaatrežiimis võib salvestus olla ajutine või keelatud.
 
 ## Avaldamine
 
-GitHub Pages avaldab `main` haru juurkaustast. Eraldi ehitust ega sõltuvusi pole vaja.
+GitHub Pages avaldab ainult üldise malli `main` haru juurkaustast. Kasutajate HTML-eksporte ega mustandeid ei lisata hoidlasse.
